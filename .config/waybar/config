@@ -31,21 +31,7 @@
         "default": ""
       },
       "persistent-workspaces": {
-      "1": [
-        "HDMI-A-1" // workspace 1 shown on DP-3
-      ],
-      "2": [
-        "HDMI-A-1" // workspace 2 shown on DP-1
-      ],
-      "3": [
-        "HDMI-A-1" // workspace 3 shown on DP-1
-      ],
-      "4": [
-        "HDMI-A-1"
-      ],
-      "5": [
-        "HDMI-A-1"
-      ],
+      "*": [ 1, 2, 3, 4, 5 ]
       }
     },
     "clock": {
@@ -53,7 +39,7 @@
       "on-click": "xfce4-settings-manager"
     },
     "backlight": {
-      "device": "intel_backlight",
+      "device": "amdgpu_bl1",
       "format": " {icon} ",
       "format-icons": ["󱃓", "󰪞", "󰪟", "󰪠", "󰪡", "󰪢", "󰪣", "󰪤", "󰪥"]
 },
@@ -80,7 +66,7 @@
      "show-passive-items": true,
     },
     "battery": {
-    "bat": "BAT0",
+    "bat": "BATT",
     "interval": 60,
     "states": {
         "warning": 30,
